@@ -1,3 +1,6 @@
+using System.Data;
+using System.Data.Common;
+
 while (true)
 {
     Console.Write("Command: ");
@@ -5,6 +8,17 @@ while (true)
 
     // TODO: Avslutt med break når command er EXIT eller null.
     // TODO: Ellers skriv Received: <command>.
-}
+    if (command == "EXIT")
+        {
+            break;
+        }
+    if(command == "")
+    {
+        Console.WriteLine("Please just write EXIT");
+    }
+
+
+}   
+
 
 Console.WriteLine("Receiver stopped.");
