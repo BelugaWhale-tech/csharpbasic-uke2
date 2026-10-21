@@ -5,6 +5,18 @@ foreach (string packet in packets)
 {
     // TODO: Bruk continue for CORRUPT.
     // TODO: Prosesser resten og øk processedCount.
+
+    // arrays starter på 0, skal jeg skrive slik at processed kommer ut "riktig"?
+
+    if(packet == "CORRUPT")
+    {
+        continue;
+    }
+    else
+    {
+        Console.WriteLine($"Processed...{processedCount++}");
+    }
+
 }
 
 Console.WriteLine($"Processed packets: {processedCount}");
